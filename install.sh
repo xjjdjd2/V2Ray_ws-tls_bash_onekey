@@ -1,13 +1,5 @@
 #!/bin/bash
 
-#====================================================
-#	System Request:Debian 9+/Ubuntu 18.04+/Centos 7+
-#	Author:	wulabing
-#	Dscription: V2ray ws+tls onekey Management
-#	Version: 1.0
-#	email:admin@wulabing.com
-#	Official document: www.v2ray.com
-#====================================================
 
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
@@ -31,7 +23,7 @@ OK="${Green}[OK]${Font}"
 Error="${Red}[错误]${Font}"
 
 # 版本
-shell_version="1.1.9.0"
+shell_version="xxx"
 shell_mode="None"
 github_branch="master"
 version_cmp="/tmp/version_cmp.tmp"
@@ -53,8 +45,8 @@ v2ray_access_log="/var/log/v2ray/access.log"
 v2ray_error_log="/var/log/v2ray/error.log"
 amce_sh_file="/root/.acme.sh/acme.sh"
 ssl_update_file="/usr/bin/ssl_update.sh"
-nginx_version="1.20.1"
-openssl_version="1.1.1k"
+nginx_version="1.23.1"
+openssl_version="3.0.5"
 jemalloc_version="5.2.1"
 old_config_status="off"
 # v2ray_plugin_version="$(wget -qO- "https://github.com/shadowsocks/v2ray-plugin/tags" | grep -E "/shadowsocks/v2ray-plugin/releases/tag/" | head -1 | sed -r 's/.*tag\/v(.+)\">.*/\1/')"
